@@ -35,6 +35,7 @@
       <concept id="7459152088147263734" name="statemachine.structure.EventTrigger" flags="ng" index="2G9rIV">
         <reference id="7459152088147263735" name="event" index="2G9rIU" />
       </concept>
+      <concept id="7454010912803093572" name="statemachine.structure.EmptyStatemachineContent" flags="ng" index="36WCGE" />
       <concept id="5323883234338083216" name="statemachine.structure.VarRef" flags="ng" index="1TwMC8">
         <reference id="5323883234338083217" name="var" index="1TwMC9" />
       </concept>
@@ -66,6 +67,7 @@
     <node concept="2G9kjh" id="6u4eORbCyok" role="2G9rJE">
       <property role="TrG5h" value="pedestrianButton" />
     </node>
+    <node concept="36WCGE" id="6tLXQUxxtP9" role="2G9rJE" />
     <node concept="1TJWhE" id="4ByeTwKnZQn" role="2G9rJE">
       <property role="TrG5h" value="counter" />
       <node concept="30bXRB" id="4ByeTwKo0g$" role="1TJWhH">
@@ -121,6 +123,39 @@
     </node>
     <node concept="2G8roD" id="6u4eORbDSrC" role="2G8roG">
       <ref role="2G8roE" node="6u4eORbD3Dj" resolve="green" />
+    </node>
+  </node>
+  <node concept="2G92H_" id="6Y0vij42Pb7">
+    <property role="TrG5h" value="AnotherOne" />
+    <node concept="2G9kjh" id="6Y0vij42Pbd" role="2G9rJE">
+      <property role="TrG5h" value="one" />
+    </node>
+    <node concept="2G9kjh" id="6tLXQUxrrW_" role="2G9rJE">
+      <property role="TrG5h" value="two" />
+    </node>
+    <node concept="2G9kjs" id="6tLXQUxyoIE" role="2G9rJE">
+      <property role="2G9kjv" value="true" />
+      <property role="TrG5h" value="U" />
+    </node>
+    <node concept="2G9kjs" id="6Y0vij42Pb8" role="2G9rJE">
+      <property role="TrG5h" value="S" />
+      <property role="2G9kjv" value="false" />
+      <node concept="2G9kji" id="6Y0vij42QfC" role="2G9rHz">
+        <ref role="2G9kjI" node="6tLXQUxrsjd" resolve="T" />
+        <node concept="2G9rIV" id="6Y0vij42QfG" role="2G9rDH">
+          <ref role="2G9rIU" node="6Y0vij42Pbd" resolve="one" />
+        </node>
+      </node>
+      <node concept="2G9kji" id="6tLXQUxrvRa" role="2G9rHz">
+        <ref role="2G9kjI" node="6tLXQUxrsjd" resolve="T" />
+        <node concept="2G9rIV" id="6tLXQUxwjba" role="2G9rDH">
+          <ref role="2G9rIU" node="6tLXQUxrrW_" resolve="two" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G9kjs" id="6tLXQUxrsjd" role="2G9rJE">
+      <property role="TrG5h" value="T" />
+      <property role="2G9kjv" value="false" />
     </node>
   </node>
 </model>

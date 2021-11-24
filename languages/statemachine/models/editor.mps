@@ -12,8 +12,12 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -25,7 +29,12 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
+      </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
@@ -54,11 +63,33 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+    </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -93,6 +124,19 @@
         <node concept="3F2HdR" id="6u4eORbCo3r" role="3EZMnx">
           <ref role="1NtTu8" to="op4d:6u4eORbCo2B" resolve="contents" />
           <node concept="2iRkQZ" id="6u4eORbCo3x" role="2czzBx" />
+          <node concept="4$FPG" id="6tLXQUxwRLp" role="4_6I_">
+            <node concept="3clFbS" id="6tLXQUxwRLq" role="2VODD2">
+              <node concept="3clFbF" id="6tLXQUxwRNo" role="3cqZAp">
+                <node concept="2ShNRf" id="6tLXQUxwRNm" role="3clFbG">
+                  <node concept="3zrR0B" id="6tLXQUxwT0N" role="2ShVmc">
+                    <node concept="3Tqbb2" id="6tLXQUxwT0P" role="3zrR0E">
+                      <ref role="ehGHo" to="op4d:6tLXQUxwRL4" resolve="EmptyStatemachineContent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="6u4eORbCo3a" role="2iSdaV" />
       </node>
@@ -140,6 +184,19 @@
         <node concept="3F2HdR" id="6u4eORbCo0K" role="3EZMnx">
           <ref role="1NtTu8" to="op4d:6u4eORbCo0I" resolve="contents" />
           <node concept="2iRkQZ" id="6u4eORbCo0Q" role="2czzBx" />
+          <node concept="4$FPG" id="6tLXQUxxCi5" role="4_6I_">
+            <node concept="3clFbS" id="6tLXQUxxCi6" role="2VODD2">
+              <node concept="3clFbF" id="6tLXQUxxCic" role="3cqZAp">
+                <node concept="2ShNRf" id="6tLXQUxxCia" role="3clFbG">
+                  <node concept="3zrR0B" id="6tLXQUxxCrr" role="2ShVmc">
+                    <node concept="3Tqbb2" id="6tLXQUxxCrt" role="3zrR0E">
+                      <ref role="ehGHo" to="op4d:6tLXQUxxChQ" resolve="EmptyStateContent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="6u4eORbCo0u" role="2iSdaV" />
       </node>
@@ -194,7 +251,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6u4eORbCo5i" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
+        <property role="3F0ifm" value="=&gt;" />
       </node>
       <node concept="1iCGBv" id="6u4eORbCo5s" role="3EZMnx">
         <ref role="1NtTu8" to="op4d:6u4eORbCnYz" resolve="target" />
@@ -245,6 +302,22 @@
     <node concept="3F0ifn" id="2zQQU3vWhW5" role="2wV5jI">
       <property role="3F0ifm" value="Workaround to fix contributions to BaseConcept generated by grammarCells." />
     </node>
+  </node>
+  <node concept="24kQdi" id="6tLXQUxwRLi">
+    <ref role="1XX52x" to="op4d:6tLXQUxwRL4" resolve="EmptyStatemachineContent" />
+    <node concept="3F0ifn" id="6tLXQUxwRLk" role="2wV5jI">
+      <node concept="VPxyj" id="6tLXQUxwRLn" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6tLXQUxxCi0">
+    <ref role="1XX52x" to="op4d:6tLXQUxxChQ" resolve="EmptyStateContent" />
+    <node concept="3F0ifn" id="6tLXQUxxCi2" role="2wV5jI" />
+  </node>
+  <node concept="22mcaB" id="6tLXQUxxYgW">
+    <ref role="aqKnT" to="op4d:6tLXQUxwRL4" resolve="EmptyStatemachineContent" />
+    <node concept="22hDWj" id="6tLXQUxxYgX" role="22hAXT" />
   </node>
 </model>
 

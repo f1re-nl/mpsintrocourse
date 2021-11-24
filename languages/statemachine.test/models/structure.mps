@@ -96,5 +96,13 @@
       <ref role="PrY4T" node="6u4eORbDoPw" resolve="ITestCaseContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6tLXQUxxtTh">
+    <property role="EcuMT" value="7454010912803249745" />
+    <property role="TrG5h" value="EmptyTestCaseContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6tLXQUxxtTi" role="PzmwI">
+      <ref role="PrY4T" node="6u4eORbDoPw" resolve="ITestCaseContent" />
+    </node>
+  </node>
 </model>
 

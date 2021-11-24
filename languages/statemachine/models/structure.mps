@@ -6,8 +6,8 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -181,6 +181,22 @@
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4ByeTwKnvZM" resolve="Variable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6tLXQUxwRL4">
+    <property role="EcuMT" value="7454010912803093572" />
+    <property role="TrG5h" value="EmptyStatemachineContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6tLXQUxwRL5" role="PzmwI">
+      <ref role="PrY4T" node="6u4eORbCnYm" resolve="IStateMachineContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6tLXQUxxChQ">
+    <property role="EcuMT" value="7454010912803292278" />
+    <property role="TrG5h" value="EmptyStateContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6tLXQUxxChR" role="PzmwI">
+      <ref role="PrY4T" node="6u4eORbCnYw" resolve="IStateContent" />
     </node>
   </node>
 </model>
