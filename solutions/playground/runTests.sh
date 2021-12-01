@@ -1,1 +1,1 @@
-java -classpath classes_gen:lib/junit4.jar playground.example.Test_TrafficLight
+java -classpath classes_gen:lib/junit4.jar playground.example.TrafficLight_Test
