@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -11,6 +10,7 @@
     <import index="u132" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:junit.framework(JUnit/)" />
     <import index="cvlm" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit.runner(JUnit/)" />
     <import index="rjhg" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit(JUnit/)" />
+    <import index="vn31" ref="r:0a6e71a7-b420-4d4c-9845-f2da16af45ac(statemachine.runtime.code)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -191,7 +191,7 @@
       <ref role="30HIoZ" to="adlf:6u4eORbDoP$" resolve="AssertState" />
       <node concept="1Koe21" id="2SDuQkQS1FU" role="1lVwrX">
         <node concept="312cEu" id="2SDuQkQS1G0" role="1Koe22">
-          <property role="TrG5h" value="Dummy" />
+          <property role="TrG5h" value="Dummy2" />
           <node concept="Wx3nA" id="2SDuQkQSzdy" role="jymVt">
             <property role="TrG5h" value="STATE" />
             <property role="2dlcS1" value="false" />
@@ -202,6 +202,15 @@
               <property role="3cmrfH" value="0" />
             </node>
             <node concept="3Tm1VV" id="2SDuQkQSzw3" role="1B3o_S" />
+          </node>
+          <node concept="Wx3nA" id="5TuDzX4GNnM" role="jymVt">
+            <property role="TrG5h" value="STATE2" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3Tm1VV" id="5TuDzX4GNho" role="1B3o_S" />
+            <node concept="10Oyi0" id="5TuDzX4GNna" role="1tU5fm" />
+            <node concept="3cmrfG" id="5TuDzX4GNtw" role="33vP2m">
+              <property role="3cmrfH" value="0" />
+            </node>
           </node>
           <node concept="312cEg" id="2SDuQkQS2GN" role="jymVt">
             <property role="34CwA1" value="false" />
@@ -221,7 +230,7 @@
               <node concept="3clFbF" id="2SDuQkQS1Lj" role="3cqZAp">
                 <node concept="2YIFZM" id="2SDuQkQS1Ll" role="3clFbG">
                   <ref role="1Pybhc" to="u132:~TestCase" resolve="TestCase" />
-                  <ref role="37wK5l" to="u132:~TestCase.assertEquals(java.lang.Object,java.lang.Object):void" resolve="assertEquals" />
+                  <ref role="37wK5l" to="u132:~TestCase.assertEquals(java.lang.Object,java.lang.Object)" resolve="assertEquals" />
                   <node concept="2OqwBi" id="2SDuQkQS2Nm" role="37wK5m">
                     <node concept="37vLTw" id="2SDuQkQS2Jo" role="2Oq$k0">
                       <ref role="3cqZAo" node="2SDuQkQS2GN" resolve="machine" />
@@ -240,7 +249,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="2SDuQkQS2R9" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                       <node concept="1ZhdrF" id="2SDuQkQS31h" role="lGtFl">
                         <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
                         <property role="2qtEX8" value="baseMethodDeclaration" />
@@ -256,32 +265,32 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="10M0yZ" id="2SDuQkQSzwt" role="37wK5m">
-                    <ref role="3cqZAo" node="2SDuQkQSzdy" resolve="STATE" />
-                    <ref role="1PxDUh" node="2SDuQkQS1G0" resolve="Dummy" />
-                    <node concept="1ZhdrF" id="2SDuQkQSzS5" role="lGtFl">
-                      <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070533707846/1144433057691" />
+                  <node concept="10M0yZ" id="5TuDzX4JG4r" role="37wK5m">
+                    <ref role="3cqZAo" to="vn31:5TuDzX4JFOp" resolve="STATE" />
+                    <ref role="1PxDUh" to="vn31:4obkQRUUwJQ" resolve="Comparator" />
+                    <node concept="1ZhdrF" id="5TuDzX4JYub" role="lGtFl">
                       <property role="2qtEX8" value="classifier" />
-                      <node concept="3$xsQk" id="2SDuQkQSzS6" role="3$ytzL">
-                        <node concept="3clFbS" id="2SDuQkQSzS7" role="2VODD2">
-                          <node concept="3clFbF" id="2SDuQkQS$0q" role="3cqZAp">
-                            <node concept="2OqwBi" id="2SDuQkQS_qz" role="3clFbG">
-                              <node concept="2OqwBi" id="2SDuQkQS$PE" role="2Oq$k0">
-                                <node concept="2OqwBi" id="2SDuQkQS$ep" role="2Oq$k0">
-                                  <node concept="30H73N" id="2SDuQkQS$0p" role="2Oq$k0" />
-                                  <node concept="2Xjw5R" id="2SDuQkQS$vy" role="2OqNvi">
-                                    <node concept="1xMEDy" id="2SDuQkQS$v$" role="1xVPHs">
-                                      <node concept="chp4Y" id="2SDuQkQS$_X" role="ri$Ld">
+                      <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070533707846/1144433057691" />
+                      <node concept="3$xsQk" id="5TuDzX4JYuc" role="3$ytzL">
+                        <node concept="3clFbS" id="5TuDzX4JYud" role="2VODD2">
+                          <node concept="3clFbF" id="5TuDzX4JYQq" role="3cqZAp">
+                            <node concept="2OqwBi" id="5TuDzX4K0Y6" role="3clFbG">
+                              <node concept="2OqwBi" id="5TuDzX4K08w" role="2Oq$k0">
+                                <node concept="2OqwBi" id="5TuDzX4JZbq" role="2Oq$k0">
+                                  <node concept="30H73N" id="5TuDzX4JYQp" role="2Oq$k0" />
+                                  <node concept="2Xjw5R" id="5TuDzX4JZpw" role="2OqNvi">
+                                    <node concept="1xMEDy" id="5TuDzX4JZpy" role="1xVPHs">
+                                      <node concept="chp4Y" id="5TuDzX4JZE$" role="ri$Ld">
                                         <ref role="cht4Q" to="adlf:6u4eORbDoAB" resolve="TestCase" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="3TrEf2" id="2SDuQkQS_1D" role="2OqNvi">
+                                <node concept="3TrEf2" id="5TuDzX4K0Cj" role="2OqNvi">
                                   <ref role="3Tt5mk" to="adlf:6u4eORbDoAC" resolve="machine" />
                                 </node>
                               </node>
-                              <node concept="3TrcHB" id="2SDuQkQS_Ed" role="2OqNvi">
+                              <node concept="3TrcHB" id="5TuDzX4K1ig" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                               </node>
                             </node>
@@ -289,20 +298,20 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="1ZhdrF" id="2SDuQkQS_US" role="lGtFl">
-                      <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                    <node concept="1ZhdrF" id="5TuDzX4KifP" role="lGtFl">
                       <property role="2qtEX8" value="variableDeclaration" />
-                      <node concept="3$xsQk" id="2SDuQkQS_UT" role="3$ytzL">
-                        <node concept="3clFbS" id="2SDuQkQS_UU" role="2VODD2">
-                          <node concept="3clFbF" id="2SDuQkQSA8G" role="3cqZAp">
-                            <node concept="2OqwBi" id="2SDuQkQSBcE" role="3clFbG">
-                              <node concept="2OqwBi" id="2SDuQkQSAmF" role="2Oq$k0">
-                                <node concept="30H73N" id="2SDuQkQSA8F" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="2SDuQkQSAPw" role="2OqNvi">
+                      <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                      <node concept="3$xsQk" id="5TuDzX4KifQ" role="3$ytzL">
+                        <node concept="3clFbS" id="5TuDzX4KifR" role="2VODD2">
+                          <node concept="3clFbF" id="5TuDzX4KiEu" role="3cqZAp">
+                            <node concept="2OqwBi" id="5TuDzX4KjyF" role="3clFbG">
+                              <node concept="2OqwBi" id="5TuDzX4Kj0g" role="2Oq$k0">
+                                <node concept="30H73N" id="5TuDzX4KiEt" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="5TuDzX4Kjh3" role="2OqNvi">
                                   <ref role="3Tt5mk" to="adlf:6u4eORbDoPB" resolve="state" />
                                 </node>
                               </node>
-                              <node concept="3TrcHB" id="2SDuQkQSBAD" role="2OqNvi">
+                              <node concept="3TrcHB" id="5TuDzX4KjT8" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                               </node>
                             </node>
@@ -503,7 +512,7 @@
         <node concept="3clFbF" id="4ByeTwKn3AJ" role="3cqZAp">
           <node concept="2YIFZM" id="4ByeTwKn3Bd" role="3clFbG">
             <ref role="1Pybhc" to="u132:~TestCase" resolve="TestCase" />
-            <ref role="37wK5l" to="u132:~TestCase.assertEquals(java.lang.String,java.lang.String):void" resolve="assertEquals" />
+            <ref role="37wK5l" to="u132:~TestCase.assertEquals(java.lang.String,java.lang.String)" resolve="assertEquals" />
             <node concept="Xl_RD" id="4ByeTwKn3BN" role="37wK5m">
               <property role="Xl_RC" value="10" />
             </node>
@@ -549,7 +558,7 @@
             <ref role="37wK5l" to="cvlm:~JUnitCore.main(java.lang.String...):void" resolve="main" />
             <node concept="2OqwBi" id="2SDuQkQSOqD" role="37wK5m">
               <node concept="3VsKOn" id="2SDuQkQSO1i" role="2Oq$k0">
-                <ref role="3VsUkX" node="2SDuQkQS1G0" resolve="Dummy" />
+                <ref role="3VsUkX" node="2SDuQkQS1G0" resolve="Dummy2" />
                 <node concept="1ZhdrF" id="2SDuQkQSPsm" role="lGtFl">
                   <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1116615150612/1116615189566" />
                   <property role="2qtEX8" value="classifier" />

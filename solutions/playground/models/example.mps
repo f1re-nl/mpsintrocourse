@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
+    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <devkit ref="86be0a72-d86a-46e6-a4a8-9b3c377f8ade(statestuff)" />
   </languages>
   <imports />
@@ -82,8 +83,42 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
+      <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
+        <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
+        <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
+        <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
+        <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
+        <property id="4583510071007917016" name="transform" index="TgtnS" />
+      </concept>
+      <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC">
+        <child id="4767615435799372763" name="labels" index="3ul5Gx" />
+      </concept>
+      <concept id="2319506556913310727" name="de.itemis.mps.editor.diagram.layout.structure.Point" flags="ng" index="2VclrF">
+        <property id="2319506556913310861" name="x" index="2Vclpx" />
+        <property id="2319506556913310863" name="y" index="2Vclpz" />
+      </concept>
+      <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
+        <child id="8963411245960991904" name="entries" index="37mRID" />
+      </concept>
+      <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
+        <property id="8963411245960998400" name="key" index="37mO49" />
+        <child id="8963411245960998404" name="value" index="37mO4d" />
+      </concept>
+      <concept id="4767615435799372731" name="de.itemis.mps.editor.diagram.layout.structure.Layout_EdgeLabel" flags="ng" index="3ul5H1">
+        <property id="4767615435799372759" name="type" index="3ul5GH" />
+        <child id="4767615435799372761" name="position" index="3ul5Gz" />
+      </concept>
+      <concept id="3253043142928125505" name="de.itemis.mps.editor.diagram.layout.structure.RelativePosition" flags="ng" index="3wpmZ1">
+        <child id="3253043142928125557" name="referencePoint" index="3wpmZP" />
+        <child id="3253043142928125559" name="offset" index="3wpmZR" />
       </concept>
     </language>
   </registry>
@@ -96,6 +131,12 @@
     <node concept="1TJWhE" id="4ByeTwKnZQn" role="2G9rJE">
       <property role="TrG5h" value="counter" />
       <node concept="30bXRB" id="4ByeTwKo0g$" role="1TJWhH">
+        <property role="30bXRw" value="0" />
+      </node>
+    </node>
+    <node concept="1TJWhE" id="4obkQRV8OBF" role="2G9rJE">
+      <property role="TrG5h" value="another" />
+      <node concept="30bXRB" id="4obkQRV8OCe" role="1TJWhH">
         <property role="30bXRw" value="0" />
       </node>
     </node>
@@ -137,50 +178,73 @@
     <node concept="2G9kjs" id="4ByeTwKoFwt" role="2G9rJE">
       <property role="TrG5h" value="error" />
     </node>
-  </node>
-  <node concept="2G8rbE" id="6u4eORbDKFr">
-    <ref role="2G8rb_" node="6u4eORbCnXb" resolve="TrafficLight" />
-    <node concept="2G8roD" id="6u4eORbDOIo" role="2G8roG">
-      <ref role="2G8roE" node="6u4eORbCyop" resolve="red" />
-    </node>
-    <node concept="2G8rrf" id="6u4eORbDSfr" role="2G8roG">
-      <ref role="2G8rre" node="6u4eORbCyok" resolve="pedestrianButton" />
-    </node>
-    <node concept="2G8roD" id="6u4eORbDSrC" role="2G8roG">
-      <ref role="2G8roE" node="6u4eORbD3Dj" resolve="green" />
-    </node>
-  </node>
-  <node concept="2G92H_" id="6Y0vij42Pb7">
-    <property role="TrG5h" value="AnotherOne" />
-    <node concept="2G9kjh" id="6Y0vij42Pbd" role="2G9rJE">
-      <property role="TrG5h" value="one" />
-    </node>
-    <node concept="2G9kjh" id="6tLXQUxrrW_" role="2G9rJE">
-      <property role="TrG5h" value="two" />
-    </node>
-    <node concept="2G9kjs" id="6tLXQUxyoIE" role="2G9rJE">
-      <property role="2G9kjv" value="true" />
-      <property role="TrG5h" value="U" />
-    </node>
-    <node concept="2G9kjs" id="6Y0vij42Pb8" role="2G9rJE">
-      <property role="TrG5h" value="S" />
-      <property role="2G9kjv" value="false" />
-      <node concept="2G9kji" id="6Y0vij42QfC" role="2G9rHz">
-        <ref role="2G9kjI" node="6tLXQUxrsjd" resolve="T" />
-        <node concept="2G9rIV" id="6Y0vij42QfG" role="2G9rDH">
-          <ref role="2G9rIU" node="6Y0vij42Pbd" resolve="one" />
+    <node concept="37mRI7" id="3gChSzHBhU3" role="lGtFl">
+      <node concept="37mRIm" id="3gChSzHBhU4" role="37mRID">
+        <property role="37mO49" value="state3" />
+        <node concept="gqqVs" id="3gChSzHBhU2" role="37mO4d">
+          <property role="gqqTZ" value="7.0" />
+          <property role="gqqTW" value="159.0" />
+          <property role="gqqTX" value="152.0" />
+          <property role="gqqTy" value="76.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
-      <node concept="2G9kji" id="6tLXQUxrvRa" role="2G9rHz">
-        <ref role="2G9kjI" node="6tLXQUxrsjd" resolve="T" />
-        <node concept="2G9rIV" id="6tLXQUxwjba" role="2G9rDH">
-          <ref role="2G9rIU" node="6tLXQUxrrW_" resolve="two" />
+      <node concept="37mRIm" id="3gChSzHBhU6" role="37mRID">
+        <property role="37mO49" value="state4" />
+        <node concept="gqqVs" id="3gChSzHBhU5" role="37mO4d">
+          <property role="gqqTZ" value="327.0" />
+          <property role="gqqTW" value="-6.0" />
+          <property role="gqqTX" value="162.0" />
+          <property role="gqqTy" value="76.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
-    </node>
-    <node concept="2G9kjs" id="6tLXQUxrsjd" role="2G9rJE">
-      <property role="TrG5h" value="T" />
-      <property role="2G9kjv" value="false" />
+      <node concept="37mRIm" id="3gChSzHBhU8" role="37mRID">
+        <property role="37mO49" value="state5" />
+        <node concept="gqqVs" id="3gChSzHBhU7" role="37mO4d">
+          <property role="gqqTZ" value="412.0" />
+          <property role="gqqTW" value="170.0" />
+          <property role="gqqTX" value="162.0" />
+          <property role="gqqTy" value="76.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="3gChSzHBhUa" role="37mRID">
+        <property role="37mO49" value="tx7459152088147442246" />
+        <node concept="2VclpC" id="3gChSzHBhU9" role="37mO4d">
+          <node concept="3ul5H1" id="3gChSzHBhUb" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="3gChSzHBhUc" role="3ul5Gz">
+              <node concept="2VclrF" id="3gChSzHBhUd" role="3wpmZR">
+                <property role="2Vclpx" value="252.5" />
+                <property role="2Vclpz" value="134.0" />
+              </node>
+              <node concept="2VclrF" id="3gChSzHBhUe" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="3gChSzHBhUg" role="37mRID">
+        <property role="37mO49" value="tx5323883234338191401" />
+        <node concept="2VclpC" id="3gChSzHBhUf" role="37mO4d">
+          <node concept="3ul5H1" id="3gChSzHBhUh" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="3gChSzHBhUi" role="3ul5Gz">
+              <node concept="2VclrF" id="3gChSzHBhUj" role="3wpmZR">
+                <property role="2Vclpx" value="52.5" />
+                <property role="2Vclpz" value="84.0" />
+              </node>
+              <node concept="2VclrF" id="3gChSzHBhUk" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="3s_ewN" id="6PnaAA1COte">
@@ -201,8 +265,17 @@
       </node>
     </node>
   </node>
-  <node concept="2G8rbE" id="6PnaAA1COCm">
-    <ref role="2G8rb_" node="6Y0vij42Pb7" resolve="AnotherOne" />
+  <node concept="2G8rbE" id="5TuDzX4Gwv8">
+    <ref role="2G8rb_" node="6u4eORbCnXb" resolve="TrafficLight" />
+    <node concept="2G8roD" id="5TuDzX4GwwP" role="2G8roG">
+      <ref role="2G8roE" node="6u4eORbCyop" resolve="red" />
+    </node>
+    <node concept="2G8rrf" id="5TuDzX4GwVo" role="2G8roG">
+      <ref role="2G8rre" node="6u4eORbCyok" resolve="pedestrianButton" />
+    </node>
+    <node concept="2G8roD" id="5TuDzX4GwYS" role="2G8roG">
+      <ref role="2G8roE" node="6u4eORbD3Dj" resolve="green" />
+    </node>
   </node>
 </model>
 

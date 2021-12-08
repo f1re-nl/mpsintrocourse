@@ -8,6 +8,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/code.build/code.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/code.buildAllScripts/code.buildAllScripts.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/statemachine.plugin/statemachine.plugin.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/statemachine.runtime/statemachine.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/statemachine.test.interpreter/statemachine.test.interpreter.msd" folder="" />
     </projectModules>
   </component>
