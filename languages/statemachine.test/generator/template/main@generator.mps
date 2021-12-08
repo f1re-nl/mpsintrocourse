@@ -191,7 +191,7 @@
       <ref role="30HIoZ" to="adlf:6u4eORbDoP$" resolve="AssertState" />
       <node concept="1Koe21" id="2SDuQkQS1FU" role="1lVwrX">
         <node concept="312cEu" id="2SDuQkQS1G0" role="1Koe22">
-          <property role="TrG5h" value="Dummy2" />
+          <property role="TrG5h" value="Dummy" />
           <node concept="Wx3nA" id="2SDuQkQSzdy" role="jymVt">
             <property role="TrG5h" value="STATE" />
             <property role="2dlcS1" value="false" />
@@ -267,7 +267,7 @@
                   </node>
                   <node concept="10M0yZ" id="5TuDzX4JG4r" role="37wK5m">
                     <ref role="3cqZAo" to="vn31:5TuDzX4JFOp" resolve="STATE" />
-                    <ref role="1PxDUh" to="vn31:4obkQRUUwJQ" resolve="Comparator" />
+                    <ref role="1PxDUh" node="2SDuQkQS1G0" resolve="Dummy" />
                     <node concept="1ZhdrF" id="5TuDzX4JYub" role="lGtFl">
                       <property role="2qtEX8" value="classifier" />
                       <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070533707846/1144433057691" />
@@ -558,7 +558,7 @@
             <ref role="37wK5l" to="cvlm:~JUnitCore.main(java.lang.String...):void" resolve="main" />
             <node concept="2OqwBi" id="2SDuQkQSOqD" role="37wK5m">
               <node concept="3VsKOn" id="2SDuQkQSO1i" role="2Oq$k0">
-                <ref role="3VsUkX" node="2SDuQkQS1G0" resolve="Dummy2" />
+                <ref role="3VsUkX" node="2SDuQkQS1G0" resolve="Dummy" />
                 <node concept="1ZhdrF" id="2SDuQkQSPsm" role="lGtFl">
                   <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1116615150612/1116615189566" />
                   <property role="2qtEX8" value="classifier" />
