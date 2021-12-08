@@ -738,6 +738,50 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3cpWs8" id="5TuDzX4VC0s" role="3cqZAp">
+                            <node concept="3cpWsn" id="5TuDzX4VC0v" role="3cpWs9">
+                              <property role="TrG5h" value="cInt" />
+                              <node concept="10Oyi0" id="5TuDzX4VC0q" role="1tU5fm" />
+                              <node concept="2OqwBi" id="5TuDzX4VFQq" role="33vP2m">
+                                <node concept="37vLTw" id="5TuDzX4VESl" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2hwqah9V5J_" resolve="counter" />
+                                </node>
+                                <node concept="liA8E" id="5TuDzX4VHxw" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~Number.intValue()" resolve="intValue" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="5TuDzX4VIpy" role="3cqZAp">
+                            <node concept="37vLTI" id="5TuDzX4VKCH" role="3clFbG">
+                              <node concept="3cpWs3" id="5TuDzX4VNQ8" role="37vLTx">
+                                <node concept="3cmrfG" id="5TuDzX4VOic" role="3uHU7w">
+                                  <property role="3cmrfH" value="1" />
+                                </node>
+                                <node concept="37vLTw" id="5TuDzX4VLAI" role="3uHU7B">
+                                  <ref role="3cqZAo" node="5TuDzX4VC0v" resolve="cInt" />
+                                </node>
+                              </node>
+                              <node concept="37vLTw" id="5TuDzX4VIpw" role="37vLTJ">
+                                <ref role="3cqZAo" node="5TuDzX4VC0v" resolve="cInt" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="5TuDzX4VQFt" role="3cqZAp">
+                            <node concept="37vLTI" id="5TuDzX4VRgR" role="3clFbG">
+                              <node concept="2ShNRf" id="5TuDzX4VTlW" role="37vLTx">
+                                <node concept="1pGfFk" id="5TuDzX4VUrO" role="2ShVmc">
+                                  <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(int)" resolve="BigDecimal" />
+                                  <node concept="37vLTw" id="5TuDzX4VWe1" role="37wK5m">
+                                    <ref role="3cqZAo" node="5TuDzX4VC0v" resolve="cInt" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="37vLTw" id="5TuDzX4VQFr" role="37vLTJ">
+                                <ref role="3cqZAo" node="2hwqah9V5J_" resolve="counter" />
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3clFbH" id="4obkQRV1yD4" role="3cqZAp" />
                         </node>
                         <node concept="3clFbC" id="4obkQRV1$Zi" role="3clFbw">

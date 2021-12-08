@@ -28,7 +28,7 @@
       </external-templates>
       <dependencies>
         <dependency reexport="false">49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)</dependency>
-        <dependency reexport="false">388b264c-9809-4e2e-b292-61ab9914c8d0(statemachine.test)</dependency>
+        <dependency reexport="true">388b264c-9809-4e2e-b292-61ab9914c8d0(statemachine.test)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">a15685d6-531e-45b7-9e72-af80302071ea(org.iets3.core.expr.genjava.stateMachineExample)</dependency>
         <dependency reexport="false">cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</dependency>
@@ -211,6 +211,9 @@
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="1" />
     <module reference="ec192600-e7e1-4a3e-8ddf-ce429474a2ed(statemachine)" version="0" />
   </dependencyVersions>
+  <runtime>
+    <dependency reexport="false">d58300e5-fb24-4f21-a0e0-1fa42103689e(statemachine.runtime)</dependency>
+  </runtime>
   <extendedLanguages>
     <extendedLanguage>cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</extendedLanguage>
   </extendedLanguages>

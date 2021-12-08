@@ -168,6 +168,20 @@
     </node>
     <node concept="2G9kjs" id="6u4eORbD3Dj" role="2G9rJE">
       <property role="TrG5h" value="green" />
+      <node concept="2G9kji" id="5TuDzX4WR16" role="2G9rHz">
+        <ref role="2G9kjI" node="6u4eORbCyop" resolve="red" />
+        <node concept="2G9rIV" id="5TuDzX4WR1B" role="2G9rDH">
+          <ref role="2G9rIU" node="6u4eORbCyok" resolve="pedestrianButton" />
+        </node>
+        <node concept="30cPrO" id="5TuDzX4WVEi" role="1TwzY$">
+          <node concept="30bXRB" id="5TuDzX4WVGY" role="30dEs_">
+            <property role="30bXRw" value="1" />
+          </node>
+          <node concept="1TwMC8" id="5TuDzX4WVDk" role="30dEsF">
+            <ref role="1TwMC9" node="4ByeTwKnZQn" resolve="counter" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G9kjs" id="4ByeTwKoFwt" role="2G9rJE">
       <property role="TrG5h" value="error" />
@@ -267,8 +281,20 @@
     <node concept="2G8rrf" id="5TuDzX4GwVo" role="2G8roG">
       <ref role="2G8rre" node="6u4eORbCyok" resolve="pedestrianButton" />
     </node>
-    <node concept="2G8roD" id="5TuDzX4GwYS" role="2G8roG">
+    <node concept="2G8roD" id="5TuDzX4WOht" role="2G8roG">
       <ref role="2G8roE" node="6u4eORbD3Dj" resolve="green" />
+    </node>
+    <node concept="2G8rrf" id="5TuDzX4WRgH" role="2G8roG">
+      <ref role="2G8rre" node="6u4eORbCyok" resolve="pedestrianButton" />
+    </node>
+    <node concept="2G8roD" id="5TuDzX4WRia" role="2G8roG">
+      <ref role="2G8roE" node="6u4eORbCyop" resolve="red" />
+    </node>
+    <node concept="2G8rrf" id="5TuDzX4WWU9" role="2G8roG">
+      <ref role="2G8rre" node="6u4eORbCyok" resolve="pedestrianButton" />
+    </node>
+    <node concept="2G8roD" id="5TuDzX4WWXD" role="2G8roG">
+      <ref role="2G8roE" node="4ByeTwKoFwt" resolve="error" />
     </node>
   </node>
 </model>
