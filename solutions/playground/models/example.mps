@@ -134,12 +134,6 @@
         <property role="30bXRw" value="0" />
       </node>
     </node>
-    <node concept="1TJWhE" id="4obkQRV8OBF" role="2G9rJE">
-      <property role="TrG5h" value="another" />
-      <node concept="30bXRB" id="4obkQRV8OCe" role="1TJWhH">
-        <property role="30bXRw" value="0" />
-      </node>
-    </node>
     <node concept="2G9kjs" id="6u4eORbCyop" role="2G9rJE">
       <property role="TrG5h" value="red" />
       <property role="2G9kjv" value="true" />
