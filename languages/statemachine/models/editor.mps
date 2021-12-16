@@ -36,6 +36,7 @@
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
@@ -432,6 +433,11 @@
               </node>
             </node>
           </node>
+          <node concept="3F0ifn" id="26w31l_8s4z" role="2czzBI">
+            <node concept="VPxyj" id="26w31l_8s4A" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="6u4eORbCo3a" role="2iSdaV" />
       </node>
@@ -490,6 +496,11 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="3F0ifn" id="26w31l_8OtM" role="2czzBI">
+            <node concept="VPxyj" id="26w31l_8OtP" role="3F10Kt">
+              <property role="VOm3f" value="true" />
             </node>
           </node>
         </node>
@@ -608,7 +619,11 @@
   </node>
   <node concept="24kQdi" id="6tLXQUxxCi0">
     <ref role="1XX52x" to="op4d:6tLXQUxxChQ" resolve="EmptyStateContent" />
-    <node concept="3F0ifn" id="6tLXQUxxCi2" role="2wV5jI" />
+    <node concept="3F0ifn" id="6tLXQUxxCi2" role="2wV5jI">
+      <node concept="VPxyj" id="26w31l_6f_f" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
   </node>
   <node concept="22mcaB" id="6tLXQUxxYgW">
     <ref role="aqKnT" to="op4d:6tLXQUxwRL4" resolve="EmptyStatemachineContent" />
@@ -1939,6 +1954,10 @@
       </node>
       <node concept="3F0ifn" id="VFjlN7IEjE" role="3EZMnx" />
     </node>
+  </node>
+  <node concept="22mcaB" id="26w31l_57Yd">
+    <ref role="aqKnT" to="op4d:6tLXQUxxChQ" resolve="EmptyStateContent" />
+    <node concept="22hDWj" id="26w31l_57Ye" role="22hAXT" />
   </node>
 </model>
 

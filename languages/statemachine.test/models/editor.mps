@@ -45,6 +45,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
@@ -273,7 +274,11 @@
   </node>
   <node concept="24kQdi" id="6tLXQUxxtTr">
     <ref role="1XX52x" to="adlf:6tLXQUxxtTh" resolve="EmptyTestCaseContent" />
-    <node concept="3F0ifn" id="6tLXQUxxtTw" role="2wV5jI" />
+    <node concept="3F0ifn" id="6tLXQUxxtTw" role="2wV5jI">
+      <node concept="VPxyj" id="26w31l_6BMa" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
   </node>
   <node concept="22mcaB" id="6tLXQUxyfW1">
     <ref role="aqKnT" to="adlf:6tLXQUxxtTh" resolve="EmptyTestCaseContent" />
