@@ -50,6 +50,7 @@
         <reference id="7459152088147263735" name="event" index="2G9rIU" />
       </concept>
       <concept id="7454010912803093572" name="statemachine.structure.EmptyStatemachineContent" flags="ng" index="36WCGE" />
+      <concept id="7454010912803292278" name="statemachine.structure.EmptyStateContent" flags="ng" index="36XRco" />
       <concept id="5323883234338083216" name="statemachine.structure.VarRef" flags="ng" index="1TwMC8">
         <reference id="5323883234338083217" name="var" index="1TwMC9" />
       </concept>
@@ -165,6 +166,21 @@
           </node>
         </node>
       </node>
+      <node concept="2G9kji" id="26w31l_egd4" role="2G9rHz">
+        <ref role="2G9kjI" node="6u4eORbD3Dj" resolve="green" />
+        <node concept="2G9rIV" id="26w31l_egdk" role="2G9rDH">
+          <ref role="2G9rIU" node="6u4eORbCyok" resolve="pedestrianButton" />
+        </node>
+        <node concept="30cPrO" id="26w31l_eCyR" role="1TwzY$">
+          <node concept="30bXRB" id="26w31l_eCAv" role="30dEs_">
+            <property role="30bXRw" value="1" />
+          </node>
+          <node concept="1TwMC8" id="26w31l_eCyJ" role="30dEsF">
+            <ref role="1TwMC9" node="4ByeTwKnZQn" resolve="counter" />
+          </node>
+        </node>
+      </node>
+      <node concept="36XRco" id="26w31l_ege_" role="2G9rHz" />
     </node>
     <node concept="2G9kjs" id="6u4eORbD3Dj" role="2G9rJE">
       <property role="TrG5h" value="green" />

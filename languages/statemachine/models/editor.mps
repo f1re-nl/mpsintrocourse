@@ -557,7 +557,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6u4eORbCo5i" role="3EZMnx">
-        <property role="3F0ifm" value="=&gt;" />
+        <property role="3F0ifm" value="-&gt;" />
       </node>
       <node concept="1iCGBv" id="6u4eORbCo5s" role="3EZMnx">
         <ref role="1NtTu8" to="op4d:6u4eORbCnYz" resolve="target" />
