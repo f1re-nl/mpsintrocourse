@@ -109,7 +109,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="3fXPVuvldQ">
-    <property role="TrG5h" value="Statemachine" />
+    <property role="TrG5h" value="TrafficLight" />
     <node concept="312cEg" id="3fXPVuvmWM" role="jymVt">
       <property role="TrG5h" value="counter" />
       <node concept="3Tm6S6" id="3fXPVuvmWo" role="1B3o_S" />
@@ -247,10 +247,10 @@
     <property role="TrG5h" value="State" />
     <property role="1sVAO0" value="true" />
     <node concept="312cEg" id="3fXPVuvmFy" role="jymVt">
-      <property role="TrG5h" value="statemachine" />
+      <property role="TrG5h" value="trafficlight" />
       <node concept="3Tmbuc" id="3fXPVuvp4S" role="1B3o_S" />
       <node concept="3uibUv" id="3fXPVuvmFp" role="1tU5fm">
-        <ref role="3uigEE" node="3fXPVuvldQ" resolve="Statemachine" />
+        <ref role="3uigEE" node="3fXPVuvldQ" resolve="TrafficLight" />
       </node>
     </node>
     <node concept="2tJIrI" id="3fXPVuvmEs" role="jymVt" />
@@ -261,21 +261,21 @@
         <node concept="3clFbF" id="3fXPVuvmGe" role="3cqZAp">
           <node concept="37vLTI" id="3fXPVuvmQ5" role="3clFbG">
             <node concept="37vLTw" id="3fXPVuvmR4" role="37vLTx">
-              <ref role="3cqZAo" node="3fXPVuvmDn" resolve="statemachine" />
+              <ref role="3cqZAo" node="3fXPVuvmDn" resolve="trafficlight" />
             </node>
             <node concept="2OqwBi" id="3fXPVuvmJ4" role="37vLTJ">
               <node concept="Xjq3P" id="3fXPVuvmGd" role="2Oq$k0" />
               <node concept="2OwXpG" id="3fXPVuvmLJ" role="2OqNvi">
-                <ref role="2Oxat5" node="3fXPVuvmFy" resolve="statemachine" />
+                <ref role="2Oxat5" node="3fXPVuvmFy" resolve="trafficlight" />
               </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="3fXPVuvmDn" role="3clF46">
-        <property role="TrG5h" value="statemachine" />
+        <property role="TrG5h" value="trafficlight" />
         <node concept="3uibUv" id="3fXPVuvmDm" role="1tU5fm">
-          <ref role="3uigEE" node="3fXPVuvldQ" resolve="Statemachine" />
+          <ref role="3uigEE" node="3fXPVuvldQ" resolve="TrafficLight" />
         </node>
       </node>
     </node>
@@ -297,14 +297,14 @@
         <node concept="XkiVB" id="3fXPVuvoB_" role="3cqZAp">
           <ref role="37wK5l" node="3fXPVuvmzv" resolve="State" />
           <node concept="37vLTw" id="3fXPVuvoCY" role="37wK5m">
-            <ref role="3cqZAo" node="3fXPVuvovH" resolve="statemachine" />
+            <ref role="3cqZAo" node="3fXPVuvovH" resolve="trafficlight" />
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="3fXPVuvovH" role="3clF46">
-        <property role="TrG5h" value="statemachine" />
+        <property role="TrG5h" value="trafficlight" />
         <node concept="3uibUv" id="3fXPVuvovG" role="1tU5fm">
-          <ref role="3uigEE" node="3fXPVuvldQ" resolve="Statemachine" />
+          <ref role="3uigEE" node="3fXPVuvldQ" resolve="TrafficLight" />
         </node>
       </node>
     </node>
@@ -327,7 +327,7 @@
               <node concept="2OqwBi" id="3fXPVuvoPj" role="2Oq$k0">
                 <node concept="Xjq3P" id="3fXPVuvoIN" role="2Oq$k0" />
                 <node concept="2OwXpG" id="3fXPVuvpae" role="2OqNvi">
-                  <ref role="2Oxat5" node="3fXPVuvmFy" resolve="statemachine" />
+                  <ref role="2Oxat5" node="3fXPVuvmFy" resolve="trafficlight" />
                 </node>
               </node>
               <node concept="liA8E" id="3fXPVuvp$y" role="2OqNvi">
@@ -341,7 +341,7 @@
                 <node concept="2OqwBi" id="3fXPVuvssp" role="2Oq$k0">
                   <node concept="Xjq3P" id="3fXPVuvshB" role="2Oq$k0" />
                   <node concept="2OwXpG" id="3fXPVuvsBc" role="2OqNvi">
-                    <ref role="2Oxat5" node="3fXPVuvmFy" resolve="statemachine" />
+                    <ref role="2Oxat5" node="3fXPVuvmFy" resolve="trafficlight" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3fXPVuvtW5" role="2OqNvi">
@@ -352,7 +352,7 @@
                       <node concept="2OqwBi" id="3fXPVuvuxD" role="37wK5m">
                         <node concept="Xjq3P" id="3fXPVuvulE" role="2Oq$k0" />
                         <node concept="2OwXpG" id="3fXPVuvu_Y" role="2OqNvi">
-                          <ref role="2Oxat5" node="3fXPVuvmFy" resolve="statemachine" />
+                          <ref role="2Oxat5" node="3fXPVuvmFy" resolve="trafficlight" />
                         </node>
                       </node>
                     </node>
@@ -370,7 +370,7 @@
                 <node concept="2OqwBi" id="3fXPVuvuSU" role="2Oq$k0">
                   <node concept="Xjq3P" id="3fXPVuvuP5" role="2Oq$k0" />
                   <node concept="2OwXpG" id="3fXPVuvuWS" role="2OqNvi">
-                    <ref role="2Oxat5" node="3fXPVuvmFy" resolve="statemachine" />
+                    <ref role="2Oxat5" node="3fXPVuvmFy" resolve="trafficlight" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3fXPVuvvam" role="2OqNvi">
@@ -384,7 +384,7 @@
                   <node concept="2OqwBi" id="3fXPVuvwku" role="2Oq$k0">
                     <node concept="Xjq3P" id="3fXPVuvw7M" role="2Oq$k0" />
                     <node concept="2OwXpG" id="3fXPVuvwpx" role="2OqNvi">
-                      <ref role="2Oxat5" node="3fXPVuvmFy" resolve="statemachine" />
+                      <ref role="2Oxat5" node="3fXPVuvmFy" resolve="trafficlight" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3fXPVuvwCj" role="2OqNvi">
@@ -395,7 +395,7 @@
                         <node concept="2OqwBi" id="3fXPVuvxw6" role="37wK5m">
                           <node concept="Xjq3P" id="3fXPVuvxic" role="2Oq$k0" />
                           <node concept="2OwXpG" id="3fXPVuvxBd" role="2OqNvi">
-                            <ref role="2Oxat5" node="3fXPVuvmFy" resolve="statemachine" />
+                            <ref role="2Oxat5" node="3fXPVuvmFy" resolve="trafficlight" />
                           </node>
                         </node>
                       </node>
@@ -421,14 +421,14 @@
         <node concept="XkiVB" id="3fXPVuvsaY" role="3cqZAp">
           <ref role="37wK5l" node="3fXPVuvmzv" resolve="State" />
           <node concept="37vLTw" id="3fXPVuvscn" role="37wK5m">
-            <ref role="3cqZAo" node="3fXPVuvs9j" resolve="statemachine" />
+            <ref role="3cqZAo" node="3fXPVuvs9j" resolve="trafficlight" />
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="3fXPVuvs9j" role="3clF46">
-        <property role="TrG5h" value="statemachine" />
+        <property role="TrG5h" value="trafficlight" />
         <node concept="3uibUv" id="3fXPVuvs9i" role="1tU5fm">
-          <ref role="3uigEE" node="3fXPVuvldQ" resolve="Statemachine" />
+          <ref role="3uigEE" node="3fXPVuvldQ" resolve="TrafficLight" />
         </node>
       </node>
     </node>
@@ -456,14 +456,14 @@
         <node concept="XkiVB" id="3fXPVuvwXa" role="3cqZAp">
           <ref role="37wK5l" node="3fXPVuvmzv" resolve="State" />
           <node concept="37vLTw" id="3fXPVuvwYz" role="37wK5m">
-            <ref role="3cqZAo" node="3fXPVuvwVx" resolve="statemachine" />
+            <ref role="3cqZAo" node="3fXPVuvwVx" resolve="trafficlight" />
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="3fXPVuvwVx" role="3clF46">
-        <property role="TrG5h" value="statemachine" />
+        <property role="TrG5h" value="trafficlight" />
         <node concept="3uibUv" id="3fXPVuvwVw" role="1tU5fm">
-          <ref role="3uigEE" node="3fXPVuvldQ" resolve="Statemachine" />
+          <ref role="3uigEE" node="3fXPVuvldQ" resolve="TrafficLight" />
         </node>
       </node>
     </node>
