@@ -4730,7 +4730,7 @@
       <ref role="30HIoZ" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
       <node concept="gft3U" id="4lRNjFWThxS" role="1lVwrX">
         <node concept="2YIFZM" id="4lRNjFWTnjw" role="gfFT$">
-          <ref role="37wK5l" to="wfax:4lRNjFWSwEt" resolve="sum" />
+          <ref role="37wK5l" to="wfax:4lRNjFWSwEt" resolve="sumAsBigDecimal" />
           <ref role="1Pybhc" to="wfax:4lRNjFWGzDc" resolve="CollectionHelper" />
           <node concept="2YIFZM" id="4lRNjFWTnjx" role="37wK5m">
             <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
