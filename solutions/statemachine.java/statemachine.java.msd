@@ -11,6 +11,9 @@
     </facet>
   </facets>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)</dependency>
+  </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -20,6 +23,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" version="0" />
     <module reference="b4bbbe59-00df-4d88-b801-758280bdff39(statemachine.java)" version="0" />
   </dependencyVersions>
 </solution>
