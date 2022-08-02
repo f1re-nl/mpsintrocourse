@@ -3,6 +3,9 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/statestuff/statestuff.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/dreamexchange.rulebook/dreamexchange.rulebook.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/dreamexchange.rulebook/runtime/dreamexchange.rulebook.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/dreamexchange.rulebook/sandbox/dreamexchange.rulebook.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/statemachine.test/statemachine.test.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/statemachine/statemachine.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/code.build/code.build.msd" folder="build" />
@@ -11,6 +14,10 @@
       <modulePath path="$PROJECT_DIR$/solutions/statemachine.plugin/statemachine.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/statemachine.runtime/statemachine.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/statemachine.test.interpreter/statemachine.test.interpreter.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/testplayground/testplayground.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/../temp/mpsintrocourse/languages/exchangescenario/exchangescenario.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/../temp/mpsintrocourse/languages/exchangescenario/runtime/exchangescenario.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/../temp/mpsintrocourse/languages/exchangescenario/sandbox/exchangescenario.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>

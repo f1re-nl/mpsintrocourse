@@ -27,10 +27,7 @@
         <generator generatorUID="4517af98-2eaa-4f19-a962-92df60010094(org.iets3.core.expr.genjava.base#8286534136181746510)" />
       </external-templates>
       <dependencies>
-        <dependency reexport="false">49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)</dependency>
-        <dependency reexport="true">388b264c-9809-4e2e-b292-61ab9914c8d0(statemachine.test)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
-        <dependency reexport="false">a15685d6-531e-45b7-9e72-af80302071ea(org.iets3.core.expr.genjava.stateMachineExample)</dependency>
         <dependency reexport="false">cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</dependency>
         <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
         <dependency reexport="false">47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)</dependency>
@@ -65,7 +62,6 @@
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-        <module reference="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
         <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
@@ -94,7 +90,6 @@
         <module reference="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" version="0" />
         <module reference="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" version="0" />
         <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
-        <module reference="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" version="0" />
         <module reference="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" version="0" />
         <module reference="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" version="0" />
         <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
@@ -112,14 +107,12 @@
         <module reference="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" version="5" />
         <module reference="4517af98-2eaa-4f19-a962-92df60010094(org.iets3.core.expr.genjava.base#8286534136181746510)" version="0" />
         <module reference="272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.genjava.simpleTypes.rt)" version="0" />
-        <module reference="a15685d6-531e-45b7-9e72-af80302071ea(org.iets3.core.expr.genjava.stateMachineExample)" version="0" />
         <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="0" />
         <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="1" />
         <module reference="52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)" version="0" />
         <module reference="ec192600-e7e1-4a3e-8ddf-ce429474a2ed(statemachine)" version="0" />
         <module reference="775134a4-c0dd-4eec-b5a6-18f21e52d840(statemachine#01)" version="0" />
         <module reference="d58300e5-fb24-4f21-a0e0-1fa42103689e(statemachine.runtime)" version="0" />
-        <module reference="388b264c-9809-4e2e-b292-61ab9914c8d0(statemachine.test)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -127,7 +120,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</dependency>
-    <dependency reexport="false">5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40(org.iets3.core.expr.genjava.simpleTypes)</dependency>
     <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
     <dependency reexport="false">1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)</dependency>
   </dependencies>
@@ -207,7 +199,6 @@
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="1" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="1" />
-    <module reference="5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40(org.iets3.core.expr.genjava.simpleTypes)" version="0" />
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="1" />
     <module reference="ec192600-e7e1-4a3e-8ddf-ce429474a2ed(statemachine)" version="0" />
   </dependencyVersions>

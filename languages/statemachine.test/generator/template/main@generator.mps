@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
-    <use id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="statemachine" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -12,6 +11,7 @@
     <import index="cvlm" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit.runner(JUnit/)" />
     <import index="rjhg" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit(JUnit/)" />
     <import index="vn31" ref="r:0a6e71a7-b420-4d4c-9845-f2da16af45ac(statemachine.runtime.code)" />
+    <import index="pq7d" ref="r:32aaf1e3-6b2e-4a01-ae2d-d1f88f67acf3(playground.example)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
